@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios的基本操作</title>
+    <style type='text/css'>
+        img {
+            width: 400px;
+            height: 400px;
+            /* 开启绝对定位*/
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <button><img src="./images/1.jpg" alt="美女-妮妮"></button>
+        <button><img src="./images/2.jpg" alt="美女-沙发"></button>
+    </div>
+    <script type='text/javascript'>
+        var buttons = document.querySelectorAll("button");
+        setInterval(() => {
+            //函数体
+            for (var i = 0; i < 2; i++) {
+                buttons[i].addEventListener("click", () => {
+                    buttons[i].style.display = none;
+                })
+            }
+        }, 3000);
+
+    </script>
+</body>
+
+</html>
